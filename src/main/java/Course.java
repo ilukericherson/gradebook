@@ -1,16 +1,18 @@
 /* Course */
 
+
 public class Course {
 
 
 	//course info
-	private String name;
-	private String courseNum;
-	private String subject;
-	private String[] prereqs;
+	private final String name;
+	private final String courseNum;
+	private final String subject;
+	
+	private ArrayList<String> prereqs;
 
 	public Course(String courseName, String courseNumber, 
-		String courseSubject, String[] coursePrereqs) {
+		String courseSubject, ArrayList<String> coursePrereqs) {
 
 		this.name = courseName;
 		this.courseNum = courseNumber;
